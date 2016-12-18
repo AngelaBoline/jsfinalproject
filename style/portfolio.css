@@ -1,0 +1,274 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic);
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+
+/* ========================= MY STYLES ========================= */
+
+
+body {
+	background-color: #333;
+	max-width: 1260px;
+	width: 100%;
+	font-size: 16px;
+}
+
+p {
+	font-size: .95em;
+}
+
+#header {
+	width: 100%;
+	height: 200px;
+	background-color: black;
+	position: relative;
+}
+
+#header h1 {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	z-index: 10;
+	font-size: 2.8em;
+	color: #fff;
+	font-weight: 700;
+}
+
+#header p {
+	position: absolute;
+	top: 35px;
+	left: 50px;
+	z-index: 10;
+	font-size: 1.25em;
+	color: #fff;
+	font-weight: 600;
+}
+
+.main a {
+	font-size: .8em;
+	color: #2a97a8;
+	text-decoration: none;
+}
+
+.row {
+	width: 100%;
+}
+
+.module {
+	background-color: #fff;
+	padding: 1%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+.module h2 {
+	font-weight: 600;
+	padding-bottom: 2%;
+}
+
+.module.mod50 {
+	width:50%;
+}
+
+.module.mod50 img {
+	width: 461px;
+    height: 309px;
+}
+
+/* CATEGORY OVERLAYS */
+
+.portfolio-image {
+
+}
+
+.portfolio-image-overlay-landscapes {
+	width: 461px;
+    height: 309px;
+    background-color: #d6df5a;
+    z-index: 1;
+    opacity: 0.7;
+    position: absolute;
+    top: 130px;
+    display:none;   
+}
+
+.portfolio-image-overlay-landscapes h2 {
+   text-align: center;
+   padding-top: 145px;
+   vertical-align: middle;
+   color: #333;
+   font-size: 16pt;
+}
+
+.portfolio-image-overlay-commercial {
+	width: 461px;
+    height: 309px;
+    background-color: #d6df5a;
+    z-index: 1;
+    opacity: 0.7;
+    position: absolute;
+    top: 130px;
+    display:none;
+}
+
+.portfolio-image-overlay-commercial h2 {
+   text-align: center;
+   padding-top: 145px;
+   vertical-align: middle;
+	color: #333;
+	font-size: 16pt;
+}
+
+.portfolio-image-overlay-livingroom {
+	width: 461px;
+    height: 309px;
+    background-color: #d6df5a;
+    z-index: 1;
+    opacity: 0.7;
+    position: absolute;
+    top: 477px;
+    display:none;   
+}
+
+.portfolio-image-overlay-livingroom h2 {
+   text-align: center;
+   padding-top: 145px;
+   vertical-align: middle;
+   color: #333;
+   font-size: 16pt;
+}
+
+.portfolio-image-overlay-kitchens {
+	width: 461px;
+    height: 309px;
+    background-color: #d6df5a;
+    z-index: 1;
+    opacity: 0.7;
+    position: absolute;
+    top: 477px;
+    display:none;   
+}
+
+.portfolio-image-overlay-kitchens h2 {
+   text-align: center;
+   padding-top: 145px;
+   vertical-align: middle;
+   color: #333;
+   font-size: 16pt;
+}
+
+.portfolio-image-overlay-bathrooms {
+	width: 461px;
+    height: 309px;
+    background-color: #d6df5a;
+    z-index: 1;
+    opacity: 0.7;
+    position: absolute;
+    top: 824px;
+    display:none;   
+}
+
+.portfolio-image-overlay-bathrooms h2 {
+   text-align: center;
+   padding-top: 145px;
+   vertical-align: middle;
+   color: #333;
+   font-size: 16pt;
+}
+
+.portfolio-image-overlay-bedrooms {
+	width: 461px;
+    height: 309px;
+    background-color: #d6df5a;
+    z-index: 1;
+    opacity: 0.7;
+    position: absolute;
+    top: 824px;
+    display:none;   
+}
+
+.portfolio-image-overlay-bedrooms h2 {
+   text-align: center;
+   padding-top: 145px;
+   vertical-align: middle;
+   color: #333;
+   font-size: 16pt;
+}
+
+/****** NAVIGATION HOVER EFFECT *******/
+
+.navigation li {
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+
+/* ========================= CLEARFIX ========================= */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+
+
+
+
+
+
+
